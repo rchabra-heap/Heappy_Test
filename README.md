@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title of the document</title>
+    <title>I tried so hard</title>
     <style>
       li {
         display: inline-block; 
