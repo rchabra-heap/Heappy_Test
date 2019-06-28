@@ -12,14 +12,7 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ol style="padding:0;">
-          <li>And got so far</li>
-          <li>And in the end</li>
-          <li> It doesn't even matteerrrrr </li>
-        </ol>
-      </nav>
-      <h1>Welcome to our page</h1>
+         <h1>Welcome to our page</h1>
       <hr>
     </header>
     <article>
