@@ -1,5 +1,4 @@
 # Heappy_Test
-<!DOCTYPE html>
 <html>
   <head>
     <title>I tried so hard</title>
@@ -15,8 +14,9 @@
     <header>
       <nav>
         <ul style="padding:0;">
-          <li>Home</li>
-          <li>About us</li>
+          <li>And got so far</li>
+          <li>And in the end</li>
+          <li> It doesn't even matteerrrrr </li>
         </ul>
       </nav>
       <h1>Welcome to our page</h1>
