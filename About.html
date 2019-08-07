@@ -98,103 +98,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
          <a href="JavaScript:void(0);" ondblclick="alert('Well done!')">Double Click Me!</a>
       </div>
-      <div>
-         <img src="//cdn.shopify.com/s/files/1/0419/1525/products/brown-leather-captain-boot-1_1024x1024.jpg?v=1562192600" alt="Captain | Brown" data-rimg="loaded" data-rimg-scale="1" data-rimg-template="//cdn.shopify.com/s/files/1/0419/1525/products/brown-leather-captain-boot-1_{size}.jpg?v=1562192600" data-rimg-max="1024x1024" srcset="//cdn.shopify.com/s/files/1/0419/1525/products/brown-leather-captain-boot-1_992x992.jpg?v=1562192600 1.00x" class="current-image" data-image-zoom="17993173321" data-rimg-template-svg="data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='1024.0'%20height='1024'></svg>">
-      </div>
-      
- <script type="application/json+photoswipe" data-photoswipe-images="">
-    {
-      "images": [{
-            "id": 17993173321,
-            "src": "\/\/cdn.shopify.com\/s\/files\/1\/0419\/1525\/products\/brown-leather-captain-boot-1_1024x1024.jpg?v=1562192600",
-            "w": 1024,
-            "h": 1024
-          },{
-            "id": 5383020806234,
-            "src": "\/\/cdn.shopify.com\/s\/files\/1\/0419\/1525\/products\/1024x1024-Mens-Captain-Brown-190519-3_1024x1024.jpg?v=1562192600",
-            "w": 1024,
-            "h": 1024
-          },{
-            "id": 17993173449,
-            "src": "\/\/cdn.shopify.com\/s\/files\/1\/0419\/1525\/products\/brown-leather-captain-boot-3_1024x1024.jpg?v=1562192600",
-            "w": 1024,
-            "h": 1024
-          },{
-            "id": 4100666228826,
-            "src": "\/\/cdn.shopify.com\/s\/files\/1\/0419\/1525\/products\/1024x1024-Men-Outsole_85bd1b68-8910-4afb-a058-084b535f8243_1024x1024.jpg?v=1562192600",
-            "w": 1024,
-            "h": 1024
-          },{
-            "id": 4807451410522,
-            "src": "\/\/cdn.shopify.com\/s\/files\/1\/0419\/1525\/products\/1024x1024-Men-Captain-Brown-190227_1024x1024.jpg?v=1562192600",
-            "w": 1024,
-            "h": 1024
-          }]
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;                                                        
+var yDown = null;                                                        
+
+function handleTouchStart(evt) {                                         
+    xDown = evt.touches[0].clientX;                                      
+    yDown = evt.touches[0].clientY;                                      
+};                                                
+
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
     }
-  </script>
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" data-photoswipe="">
-    <!--
-      Background of PhotoSwipe.
-      It's a separate element as animating opacity is faster than rgba().
-    -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-      <!--
-        Container that holds slides.
-        PhotoSwipe keeps only 3 of them in the DOM to save memory.
-        Don't modify these 3 pswp__item elements, data is added later on.
-      -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-      <!--
-        Default (PhotoSwipeUI_Default) interface on top of sliding area.
-        Can be changed.
-      -->
-      <div class="pswp__ui pswp__ui--hidden">
-        <div class="pswp__top-bar">
-          <!--  Controls are self-explanatory. Order can be changed. -->
-          <div class="pswp__counter"></div>
-          <button class="pswp__button pswp__button--close" title="Close" aria-label="Close">
-            <svg class="svg-icon icon-close-thin " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 20 20">
-  <desc>Close Thin Icon</desc>
-  <path stroke="currentColor" stroke-width="1.5" d="M1 1l9 9m0 0l9 9m-9-9l9-9m-9 9l-9 9"></path>
-</svg>
-          </button>
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"><svg class="svg-icon icon-arrow-thin-left " xmlns="http://www.w3.org/2000/svg" width="23" height="40" viewBox="0 0 23 40">
-  <desc>Arrow Thin Left Icon</desc>
-  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.14595 20L22.573 2.57298L20 0L0 20L20 40L22.573 37.427L5.14595 20Z"></path>
-</svg></button>
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"><svg class="svg-icon icon-arrow-thin-right " xmlns="http://www.w3.org/2000/svg" width="23" height="40" viewBox="0 0 23 40">
-  <desc>Arrow Thin Right Icon</desc>
-  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M17.427 20L0 2.57298L2.57298 0L22.573 20L2.57298 40L0 37.427L17.427 20Z"></path>
-</svg></button>
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"><span class="mobile--hide">Click image to zoom</span><span class="desktop--hide">Double tap image to zoom</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-         
+
+    var xUp = evt.touches[0].clientX;                                    
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        if ( xDiff > 0 ) {
+            /* left swipe */ 
+        } else {
+            /* right swipe */
+        }                       
+    } else {
+        if ( yDiff > 0 ) {
+            /* up swipe */ 
+        } else { 
+            /* down swipe */
+        }                                                                 
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;                                             
+};        
   </body>
 </html>
   
